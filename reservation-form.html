@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>예약 등록 | H HOTEL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <site-header current="reservation"></site-header>
+
+    <!-- Page hero -->
+    <section
+      class="page-hero"
+      style="
+        background-image: url(&quot;images/reservation-hero-hand.jpg&quot;);
+      "
+    >
+      <h1 class="page-hero__title sr-only">RESERVATION</h1>
+      <p class="page-hero__subtitle sr-only">실시간예약</p>
+    </section>
+
+    <section class="section" id="bookingFormSection">
+      <h2 class="section__title">예약 등록</h2>
+
+      <form class="booking-form" id="bookingForm">
+        <div>
+          <div class="form-field">
+            <label>ROOM</label>
+            <div class="form-field__static" id="roomField"></div>
+          </div>
+          <div class="form-field">
+            <label>추가인원</label>
+            <div class="form-field__static" id="guestsField"></div>
+          </div>
+          <div class="form-field">
+            <label>예약명</label>
+            <input
+              type="text"
+              id="guestName"
+              placeholder="예약명을 입력해 주세요."
+            />
+            <p class="form-field__error">필수 입력 값입니다.</p>
+          </div>
+          <div class="form-field">
+            <label>전화번호</label>
+            <input
+              type="tel"
+              id="guestPhone"
+              placeholder="-를 제외하고 입력해 주세요."
+            />
+            <p class="form-field__error">필수 입력 값입니다.</p>
+          </div>
+          <div class="booking-summary">
+            체크인 : <span id="checkinField"></span><br />
+            체크아웃 : <span id="checkoutField"></span>
+          </div>
+          <div class="booking-total">
+            <span>총 합계</span>
+            <strong id="totalField">0 원</strong>
+          </div>
+        </div>
+
+        <div class="booking-panel">
+          <div id="calendar" class="calendar calendar--form"></div>
+
+
+        <div class="booking-actions" style="grid-column: 1 / -1">
+          <button type="button" id="cancelFormBtn" class="btn">취소</button>
+          <button type="submit" class="btn btn--primary">예약하기</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <to-top-button></to-top-button>
+    
+    <script src="components.js"></script>
+    <script src="reservation.js"></script>
+    <script src="reservation-form.js"></script>
+    <script src="reservation-detail.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

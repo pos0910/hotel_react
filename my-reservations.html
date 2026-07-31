@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 예약 확인/취소 | H HOTEL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <site-header current="reservation"></site-header>
+
+    <!-- Page hero -->
+    <section class="page-hero" style="background-image: url('images/reservation-hero-hand.jpg')">
+      <h1 class="page-hero__title sr-only">RESERVATION</h1>
+      <p class="page-hero__subtitle sr-only">내 예약 확인/취소</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">내 예약 확인/취소</h2>
+
+      <div id="reservationList" class="reservation-list"></div>
+    </section>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <to-top-button></to-top-button>
+
+    <script src="components.js"></script>
+    <script src="reservation.js"></script>
+    <script src="my-reservations.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

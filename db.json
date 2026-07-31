@@ -1,0 +1,26 @@
+[
+  {
+    "id": "H1784184966200",
+    "room": "deluxe",
+    "roomName": "디럭스",
+    "checkin": "2026-07-16",
+    "checkout": "2026-07-17",
+    "guests": 0,
+    "total": 180000,
+    "name": "홍길동",
+    "phone": "01011112222",
+    "createdAt": "2026-07-16T06:56:06.200Z"
+  },
+  {
+    "id": "H1784875864760",
+    "room": "standard",
+    "roomName": "스탠다드",
+    "checkin": "2026-07-24",
+    "checkout": "2026-07-25",
+    "guests": 0,
+    "total": 150000,
+    "name": "ﾱﾱ",
+    "phone": "01011112222",
+    "createdAt": "2026-07-24T06:51:04.760Z"
+  }
+]

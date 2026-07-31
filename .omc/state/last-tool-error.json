@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"curl -sk -o /dev/null -w \\\"HTTP_CODE:%{http_code}\\\\n\\\" https://localhost:443 --max-time 5\\ncurl -s https://localhost:443 --cacert \\\"C:\\\\Users\\\\USER\\\\AppData\\\\Local\\\\mkcert\\\\rootCA.pem\\\" -o...",
+  "error": "Exit code 60\nHTTP_CODE:200\r\nTRUSTED_CERT_CODE:000",
+  "timestamp": "2026-07-28T07:05:00.466Z",
+  "retry_count": 1
+}

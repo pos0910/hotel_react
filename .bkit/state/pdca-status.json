@@ -1,0 +1,665 @@
+{
+  "version": "3.0",
+  "lastUpdated": "2026-07-28T07:02:09.004Z",
+  "activeFeatures": [
+    "scratchpad",
+    "hotel"
+  ],
+  "primaryFeature": "scratchpad",
+  "features": {
+    "scratchpad": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-07-13T07:04:01.199Z",
+        "lastUpdated": "2026-07-15T07:03:56.460Z"
+      },
+      "lastFile": "C:\\Users\\USER\\AppData\\Local\\Temp\\claude\\C--Users-USER-Desktop-hotel\\9ed4ec88-2591-4e6a-90d8-aff24324d291\\scratchpad\\blur_button2.py"
+    },
+    "hotel": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-07-13T07:23:24.041Z",
+        "lastUpdated": "2026-07-28T07:02:09.003Z"
+      },
+      "lastFile": "C:\\Users\\USER\\Desktop\\hotel\\server.js"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Dynamic",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-07-13T05:06:26.472Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-07-28T07:02:09.004Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-07-13T07:04:01.201Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:04:37.407Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:04:58.407Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:06:06.613Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:16:32.603Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:17:09.661Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:18:11.982Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:18:35.636Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:19:06.514Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:19:30.286Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:23:24.042Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:23:37.929Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-13T07:24:06.890Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T00:07:59.788Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T00:08:04.986Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T00:08:10.628Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T00:11:12.435Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T01:31:33.894Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T01:37:30.836Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T04:36:55.189Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T04:37:09.576Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T04:37:16.510Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T04:37:37.036Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T04:37:46.297Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T05:10:49.584Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T05:10:59.400Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T05:17:05.211Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T05:17:11.661Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T05:22:36.406Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T05:22:41.065Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T05:22:45.382Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T05:22:49.921Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:00:36.362Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:00:51.444Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:00:56.473Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:01:01.053Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:01:06.923Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:01:17.769Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:01:28.152Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:17:24.818Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:20:21.888Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:21:55.217Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:22:04.662Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:22:08.977Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:22:18.332Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:22:23.108Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:22:43.198Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:23:12.009Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:23:49.183Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:28:42.910Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:28:48.453Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:28:55.540Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:29:06.598Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:29:11.827Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:29:31.029Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:29:37.994Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:57:31.402Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:57:43.611Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T06:57:56.201Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:09:35.109Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:11:04.164Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:11:49.217Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:11:54.341Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:12:08.584Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:12:15.464Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:12:33.863Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:12:54.641Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:13:26.319Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:13:37.694Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:21:01.028Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:21:14.313Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-14T07:35:22.754Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T00:13:55.578Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T06:55:28.344Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T06:55:54.087Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T06:56:51.839Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T07:03:56.461Z",
+      "feature": "scratchpad",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T07:11:38.662Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T07:17:15.326Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T07:18:20.309Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T07:18:46.835Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T07:27:04.744Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T07:42:15.442Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T11:18:42.466Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T14:39:43.655Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-15T14:45:12.159Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-16T01:48:21.641Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-16T04:20:57.385Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-16T05:06:14.424Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-16T05:10:00.698Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-16T05:13:38.019Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-16T05:19:11.899Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-16T05:20:29.619Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-28T06:41:44.517Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-28T06:42:12.845Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-28T06:42:15.793Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-28T06:42:21.608Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-28T07:02:00.062Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-28T07:02:04.772Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-07-28T07:02:09.004Z",
+      "feature": "hotel",
+      "phase": "do",
+      "action": "updated"
+    }
+  ],
+  "stateMachine": {
+    "defaultWorkflow": "default",
+    "activeWorkflows": {},
+    "totalTransitions": 0
+  },
+  "automation": {
+    "globalLevel": 2,
+    "trustScore": 40,
+    "pendingApprovals": 0,
+    "lastGateResult": null
+  },
+  "team": {
+    "enabled": true,
+    "stateFile": ".bkit/runtime/agent-state.json",
+    "eventsFile": ".bkit/runtime/agent-events.jsonl"
+  }
+}

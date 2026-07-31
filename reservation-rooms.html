@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객실 선택 | H HOTEL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <site-header current="reservation"></site-header>
+
+    <!-- Page hero -->
+    <section
+      class="page-hero"
+      style="
+        background-image: url(&quot;images/reservation-hero-hand.jpg&quot;);
+      "
+    >
+      <h1 class="page-hero__title sr-only">RESERVATION</h1>
+      <p class="page-hero__subtitle sr-only">실시간예약</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">객실 선택</h2>
+
+      <div class="room-banner-list">
+        <a
+          href="reservation-detail.html?room=standard"
+          class="room-banner"
+          style="
+            background-image: url(&quot;images/room-standard-banner.jpg&quot;);
+          "
+        >
+          <span class="sr-only">STANDARD 객실 선택</span>
+        </a>
+        <a
+          href="reservation-detail.html?room=deluxe"
+          class="room-banner"
+          style="
+            background-image: url(&quot;images/room-deluxe-banner.jpg&quot;);
+          "
+        >
+          <span class="sr-only">DELUXE 객실 선택</span>
+        </a>
+        <a
+          href="reservation-detail.html?room=premium"
+          class="room-banner"
+          style="
+            background-image: url(&quot;images/room-premium-banner.jpg&quot;);
+          "
+        >
+          <span class="sr-only">PREMIUM 객실 선택</span>
+        </a>
+        <a
+          href="reservation-detail.html?room=sweet"
+          class="room-banner"
+          style="
+            background-image: url(&quot;images/room-sweet-banner.jpg&quot;);
+          "
+        >
+          <span class="sr-only">SWEET 객실 선택</span>
+        </a>
+      </div>
+
+      <div class="notice-box">
+        <h3 class="notice-box__title">취소 및 환불 규정</h3>
+        <div class="notice-box__body">
+          <p>
+            숙박 예정일 1일 전 18시까지는 위약금 없이 취소 및 변경이 가능합니다.
+          </p>
+          <p>
+            숙박 예정일 1일 전 18시 이후 취소/변경 및 노쇼(No-show) 발생 시,
+          </p>
+          <p>- 성수기 : 최초 1일 숙박 요금의 80%가 위약금으로 부과됩니다.</p>
+          <p>
+            - 비수기(성수기 외 기간) : 최초 1일 숙박 요금의 10%가 위약금으로
+            부과됩니다.
+          </p>
+          <p>일부 패키지의 경우 별도의 취소규정이 적용됩니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <to-top-button></to-top-button>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

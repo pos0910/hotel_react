@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>예약안내 | H HOTEL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <site-header current="reservation"></site-header>
+
+    <!-- Page hero -->
+    <section class="page-hero" style="background-image: url('images/reservation-hero-bell.jpg')">
+      <h1 class="page-hero__title sr-only">RESERVATION</h1>
+      <p class="page-hero__subtitle sr-only">예약안내</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">예약안내</h2>
+
+      <div class="price-table-wrap">
+        <table class="price-table">
+          <thead>
+            <tr>
+              <th rowspan="3">객실</th>
+              <th rowspan="3">면적</th>
+              <th rowspan="3">인원<br />(기준/최대)</th>
+              <th colspan="3">비수기<br />(10.01-06.30)</th>
+              <th colspan="3">성수기<br />(07.01-09.30)</th>
+            </tr>
+            <tr>
+              <th>주중</th>
+              <th>주말</th>
+              <th>휴일</th>
+              <th>주중</th>
+              <th>주말</th>
+              <th>휴일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>스탠다드</td>
+              <td>78㎡</td>
+              <td>2/2</td>
+              <td>150,000</td>
+              <td>180,000</td>
+              <td>200,000</td>
+              <td>180,000</td>
+              <td>200,000</td>
+              <td>250,000</td>
+            </tr>
+            <tr>
+              <td>디럭스</td>
+              <td>94㎡</td>
+              <td>2/3</td>
+              <td>180,000</td>
+              <td>200,000</td>
+              <td>250,000</td>
+              <td>200,000</td>
+              <td>250,000</td>
+              <td>280,000</td>
+            </tr>
+            <tr>
+              <td>프리미엄</td>
+              <td>105㎡</td>
+              <td>2/4</td>
+              <td>200,000</td>
+              <td>250,000</td>
+              <td>280,000</td>
+              <td>250,000</td>
+              <td>280,000</td>
+              <td>320,000</td>
+            </tr>
+            <tr>
+              <td>스위트</td>
+              <td>200㎡</td>
+              <td>4/6</td>
+              <td>250,000</td>
+              <td>280,000</td>
+              <td>320,000</td>
+              <td>280,000</td>
+              <td>320,000</td>
+              <td>400,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-cols">
+        <div class="info-col">
+          <h3>숙박 조건</h3>
+          <p>
+            디럭스 &amp; 스위트 : 성인2 + 아동2 (만12세이하까지만 해당)<br />
+            스위트 : 성인4 + 아동2 (만12세이하까지만 해당)
+          </p>
+        </div>
+        <div class="info-col info-col--mid">
+          <h3>식사 제공</h3>
+          <p>
+            디럭스 &amp; 스위트 (성인 2명 제공), 스위트 (성인 4명 제공)<br />
+            12세미만 아동 2명 차일드 메뉴 무료 제공<br />
+            3박 예약시 : 조식 3회, 중석식 4회<br />
+            4박 예약시 : 조식 4회, 중석식 6회
+          </p>
+        </div>
+        <div class="info-col info-col--dark">
+          <h3>세부 사항</h3>
+          <p>
+            키즈 카페 쿠폰 제공 (아동 2명까지 가능, 2시간 제한)<br />
+            키즈 클럽 무료 이용 (아동 2명까지 가능, 숙박 기간동안 무제한 이용)<br />
+            라운지 쿠폰 제공 (맥주 or 쉐이크 or 망고빙수 중 택1)
+          </p>
+        </div>
+      </div>
+
+      <div class="notice-box">
+        <h3 class="notice-box__title">취소 및 환불 규정</h3>
+        <div class="notice-box__body">
+          <p>숙박 예정일 1일 전 18시까지는 위약금 없이 취소 및 변경이 가능합니다.</p>
+          <p>숙박 예정일 1일 전 18시 이후 취소/변경 및 노쇼(No-show) 발생 시,</p>
+          <p>- 성수기 : 최초 1일 숙박 요금의 80%가 위약금으로 부과됩니다.</p>
+          <p>- 비수기(성수기 외 기간) : 최초 1일 숙박 요금의 10%가 위약금으로 부과됩니다.</p>
+          <p>일부 패키지의 경우 별도의 취소규정이 적용됩니다.</p>
+        </div>
+      </div>
+
+      <div class="reservation-cta">
+        <a href="reservation-rooms.html" class="hero__btn reservation-cta__btn">객실 선택하고 예약하기</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <to-top-button></to-top-button>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+피그마 호텔 데스크톱
+
+https://www.figma.com/design/mWlPll202t7wPEk1E7PGgj/%ED%98%B8%ED%85%94%EC%98%88%EC%95%BD?node-id=192-3793&t=sfyc4WdjIuFg1y5P-1
+
+피그마 호텔 모바일 반응형
+
+https://www.figma.com/design/oPs9JEe5hETkIPwIhw1Vgy/%ED%98%B8%ED%85%94%EC%98%88%EC%95%BD-%EB%AA%A8%EB%B0%94%EC%9D%BC?node-id=0-1&t=5asThpXJ8D4RNgjs-1

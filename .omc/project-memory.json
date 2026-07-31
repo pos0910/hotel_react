@@ -1,0 +1,104 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1785288598976,
+  "projectRoot": "C:\\Users\\USER\\Desktop\\hotel",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "yarn",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "yarn start",
+    "scripts": {
+      "start": "node server.js"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "figma_web": {
+      "path": "figma_web",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1785288598903,
+      "keyFiles": []
+    },
+    "figma_web_mobile": {
+      "path": "figma_web_mobile",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1785288598904,
+      "keyFiles": []
+    },
+    "images": {
+      "path": "images",
+      "purpose": null,
+      "fileCount": 27,
+      "lastAccessed": 1785288598916,
+      "keyFiles": [
+        "1.webp",
+        "2.png",
+        "3.webp",
+        "arrow-up.png",
+        "banner.jpg"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "server.js",
+      "accessCount": 10,
+      "lastAccessed": 1785222129187,
+      "type": "file"
+    },
+    {
+      "path": "docker-compose.yml",
+      "accessCount": 5,
+      "lastAccessed": 1785222272419,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 3,
+      "lastAccessed": 1785222135844,
+      "type": "file"
+    },
+    {
+      "path": "traefik\\dynamic.yml",
+      "accessCount": 2,
+      "lastAccessed": 1785222267481,
+      "type": "file"
+    },
+    {
+      "path": "Dockerfile",
+      "accessCount": 1,
+      "lastAccessed": 1785222082439,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

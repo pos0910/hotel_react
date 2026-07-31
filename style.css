@@ -1,0 +1,1097 @@
+/* ---------- Reset & tokens ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --charcoal: #333333;
+  --ink: #222222;
+  --gray-text: #6f6f6f;
+  --gray-light: #9a9a9a;
+  --hairline: #e6e6e6;
+  --rose: #c94f6d;
+  --sage: #4c7a63;
+  --footer-bg: #232323;
+  --white: #ffffff;
+  --maxw: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* prevents phantom horizontal scroll from off-screen elements (e.g. the
+     hidden nav dropdown submenus) without hiding anything that's visible */
+  overflow-x: hidden;
+  font-family:
+    "Pretendard",
+    "Noto Sans KR",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ---------- Accessibility utility ---------- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Header ---------- */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 26px 24px 22px;
+  background: var(--white);
+  border-bottom: 1px solid var(--hairline);
+}
+.logo {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.nav a {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  color: #7a7a7a;
+  transition: color 0.2s ease;
+}
+.nav a:hover {
+  color: var(--ink);
+}
+.nav__divider {
+  width: 1px;
+  height: 10px;
+  background: #d4d4d4;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  height: 70vh;
+  min-height: 420px;
+  max-height: 680px;
+  overflow: hidden;
+  color: var(--white);
+}
+.hero__track {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.hero__slide {
+  flex: 0 0 33.3333%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.hero__overlay {
+  display: none;
+}
+.hero__content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero__title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
+}
+.hero__btn {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  padding: 10px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  color: var(--white);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+.hero__btn:hover {
+  background: var(--white);
+  color: var(--ink);
+}
+/* Real "SEE MORE" button matching Figma's Default/hover states. */
+.hero__btn--ghost {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 147px;
+  height: 48px;
+  padding: 9px 24px;
+  border: 1px solid var(--white);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--white);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+.hero__btn--ghost:hover,
+.hero__btn--ghost:active {
+  background: var(--white);
+  border: 1px solid var(--white);
+  color: var(--ink);
+}
+.hero__dots {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.hero__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+.hero__dot.is-active {
+  background: var(--white);
+  transform: scale(1.2);
+}
+
+/* ---------- Generic section ---------- */
+.section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 56px 24px 44px;
+}
+.section__title {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--ink);
+  margin-bottom: 26px;
+}
+
+/* Full-bleed sliding image row (rooms) — spans the full viewport width
+   (not capped at --maxw like other sections), so the side gutters become
+   part of the swipeable area and cards stretch to fill that room. The
+   card count isn't fixed; whatever doesn't fit just slides into view. */
+.section--rooms {
+  padding-bottom: 24px;
+}
+.rooms-slider {
+  position: relative;
+  width: 100%;
+  padding: 0 24px 44px;
+  /*padding: 0 0px 0px;*/
+}
+.scroll-row {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  cursor: grab;
+  user-select: none;
+}
+.scroll-row::-webkit-scrollbar {
+  display: none;
+}
+.scroll-row.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+}
+
+.room-card {
+  position: relative;
+  flex: 0 0 auto;
+  /* ~4.3 slots visible at once, so a sliver of the 5th card peeks in as a
+     swipe hint instead of being fully hidden. Sized relative to the
+     container itself (not vw) so this ratio holds at any viewport width. */
+  width: max(220px, calc((100% - 4 * 14px) / 4.3));
+  /* 원본 rooms 이미지 비율(600x450 = 4:3)에 맞춰 전체가 보이도록 변경 */
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #eee;
+  scroll-snap-align: start;
+}
+.room-card img {
+  transition: transform 0.5s ease;
+}
+.room-card:hover img {
+  transform: scale(1.06);
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--rose);
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 0.02em;
+  padding: 4px 8px 4px 6px;
+  border-radius: 2px;
+}
+.badge .pin {
+  width: 7px;
+  height: 7px;
+  border-radius: 50% 50% 50% 0;
+  background: #fff;
+  transform: rotate(-45deg);
+}
+
+/* ---------- Event grid ----------
+   Same flex/gap/width formula as .room-card so each event photo's X
+   position lines up exactly under the room photo above it — only the
+   Y (this row sits below) differs. */
+.event-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.event-card {
+  flex: 0 0 auto;
+  width: max(220px, calc((100% - 4 * 14px) / 4.3));
+}
+.event-card img {
+  /* 원본 event 이미지 비율(400x301 ≈ 4:3)에 맞춰 전체가 보이도록 변경 */
+  /* height:auto overrides the global img{height:100%} rule, which was
+     stretching this taller than 4:3 (100% of an auto-height parent). */
+  height: auto;
+  aspect-ratio: 4/3;
+  background: #eee;
+}
+.event-card figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 11.5px;
+  color: var(--gray-text);
+  letter-spacing: 0.01em;
+}
+
+/* ---------- 2024 Best Hotel banner ---------- */
+.banner {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--white);
+}
+.banner__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+.banner__overlay {
+  display: none;
+}
+.banner__content {
+  position: relative;
+  text-align: center;
+  padding: 40px 24px;
+  max-width: 520px;
+}
+.banner__icon {
+  margin: 0 auto 14px;
+  color: var(--white);
+  opacity: 0.9;
+}
+.banner__title {
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+.banner__quote {
+  font-style: italic;
+  font-size: 12.5px;
+  line-height: 1.9;
+  color: #e7e2dc;
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: var(--footer-bg);
+  color: #bdbdbd;
+  text-align: center;
+  padding: 52px 24px 40px;
+}
+.footer__logo {
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--white);
+  margin-bottom: 18px;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.footer__social a {
+  color: #bdbdbd;
+  transition: color 0.2s ease;
+}
+.footer__social a:hover {
+  color: var(--white);
+}
+.footer__address {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #9a9a9a;
+  margin-bottom: 10px;
+}
+.footer__copy {
+  font-size: 10.5px;
+  color: #7d7d7d;
+  letter-spacing: 0.02em;
+}
+.footer__copy a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+/* ---------- Back to top ---------- */
+.to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  z-index: 50;
+}
+.to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.to-top:hover {
+  filter: brightness(1.08);
+}
+
+/* ---------- Reservation pages ---------- */
+.nav a.is-current {
+  color: var(--ink);
+}
+
+.page-hero {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.price-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 40px;
+}
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+  font-size: 13px;
+  text-align: center;
+}
+.price-table th,
+.price-table td {
+  border: 1px solid var(--hairline);
+  padding: 14px 10px;
+}
+.price-table thead th {
+  background: #e2e2e2;
+  font-weight: 600;
+}
+.price-table thead tr:first-child th {
+  background: #d6d6d6;
+}
+.price-table tbody td:first-child {
+  font-weight: 600;
+}
+.price-table tbody tr {
+  transition: background 0.15s ease;
+}
+.price-table tbody tr:hover {
+  background: #f2f2f2;
+}
+
+.info-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+}
+.info-col {
+  background: #f2f2f2;
+  padding: 30px 22px;
+  text-align: center;
+}
+.info-col--mid {
+  background: #e4e4e4;
+}
+.info-col--dark {
+  background: #cfcfcf;
+}
+.info-col h3 {
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
+}
+.info-col p {
+  font-size: 12.5px;
+  line-height: 1.9;
+  color: var(--gray-text);
+}
+
+.notice-box {
+  border: 1px solid var(--hairline);
+  margin-bottom: 40px;
+}
+.notice-box__title {
+  background: #dcdcdc;
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.notice-box__body {
+  padding: 20px;
+}
+.notice-box__body p {
+  font-size: 12.5px;
+  line-height: 2;
+  color: var(--gray-text);
+}
+
+.reservation-cta {
+  text-align: center;
+}
+.reservation-cta__btn {
+  display: inline-block;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.reservation-cta__btn:hover {
+  background: var(--ink);
+  color: var(--white);
+}
+
+/* Room selection banners */
+.room-banner-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.room-banner {
+  position: relative;
+  display: block;
+  /* 반응형 높이: 화면이 줄어들면 배너도 함께 작아짐.
+     너비 기반(vw)으로 계산해 모바일에서는 자연스럽게 낮아지되,
+     min-height(160px)·max-height(266px)로 과도하게 커지거나 작아지는 걸 제한. */
+  height: clamp(160px, 30vw, 266px);
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  overflow: hidden;
+}
+.room-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.25s ease;
+  pointer-events: none;
+}
+.room-banner:hover::after {
+  background: rgba(0, 0, 0, 0.35);
+}
+/* Room detail page */
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 32px;
+}
+.detail-gallery__main {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin-bottom: 8px;
+  background: #eee;
+}
+.detail-gallery__thumbs {
+  display: flex;
+  gap: 8px;
+}
+.detail-gallery__thumbs img {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 0;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+.detail-gallery__thumbs img:hover,
+.detail-gallery__thumbs img.is-active {
+  opacity: 1;
+}
+.detail-desc {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--gray-text);
+  margin-top: 16px;
+}
+.detail-desc p + p {
+  margin-top: 6px;
+}
+
+.booking-panel__title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.calendar__head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.calendar__nav {
+  font-size: 16px;
+  color: var(--gray-text);
+  padding: 4px 8px;
+}
+.calendar__nav:hover {
+  color: var(--ink);
+}
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.calendar th {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gray-text);
+  padding: 6px 0;
+}
+.calendar th.is-sun {
+  color: var(--rose);
+}
+.calendar td {
+  text-align: center;
+  padding: 6px 2px;
+  vertical-align: top;
+  height: 52px;
+  font-size: 12.5px;
+}
+.calendar__day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--ink);
+}
+.calendar__day span.tag {
+  font-size: 9px;
+  color: var(--rose);
+  margin-top: 2px;
+}
+.calendar__day.is-muted {
+  color: #c9c9c9;
+  cursor: default;
+}
+.calendar__day.is-blocked {
+  color: var(--rose);
+  cursor: not-allowed;
+}
+.calendar__day.is-sun:not(.is-muted) {
+  color: var(--rose);
+}
+.calendar__day.is-today {
+  font-weight: 700;
+}
+.calendar__day.is-selected {
+  background: var(--sage);
+  color: #fff;
+  border-radius: 4px;
+}
+.calendar__day.is-in-range {
+  background: var(--sage);
+  color: #fff;
+  border-radius: 4px;
+}
+.calendar__day:not(.is-muted):not(.is-blocked):hover {
+  background: rgba(76, 122, 99, 0.28);
+}
+.calendar--readonly .calendar__day {
+  cursor: default;
+}
+.calendar--readonly .calendar__day:hover {
+  background: none;
+}
+
+.booking-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-top: 1px solid var(--hairline);
+  font-size: 13.5px;
+}
+.booking-row select {
+  flex: 0 0 auto;
+  font-family: inherit;
+  font-size: 13px;
+  padding: 6px 10px;
+  border: 1px solid var(--hairline);
+}
+.booking-row__hint {
+  flex: 1 1 auto;
+  font-size: 11.5px;
+  color: var(--gray-text);
+}
+.booking-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  font-size: 14px;
+}
+.booking-total strong {
+  font-size: 20px;
+}
+
+.booking-actions {
+  display: flex;
+  gap: 10px;
+}
+.btn {
+  flex: 1;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 1px solid var(--ink);
+  background: var(--white);
+  color: var(--ink);
+}
+.btn--primary {
+  background: var(--ink);
+  color: var(--white);
+}
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* My reservations (cancel) page */
+.reservation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.reservation-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  border: 1px solid var(--hairline);
+  flex-wrap: wrap;
+}
+.reservation-list__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  font-size: 13px;
+  color: var(--gray-text);
+}
+.reservation-list__info strong {
+  color: var(--ink);
+}
+.reservation-list__cancel {
+  flex: 0 0 auto;
+  padding: 10px 18px;
+  border-color: var(--rose);
+  color: var(--rose);
+}
+.reservation-list__cancel:hover {
+  background: var(--rose);
+  color: var(--white);
+}
+
+/* Reservation form page */
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.form-field {
+  margin-bottom: 20px;
+}
+.form-field label {
+  display: block;
+  font-size: 12.5px;
+  color: var(--gray-text);
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+.form-field input,
+.form-field .form-field__static {
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--hairline);
+}
+.form-field .form-field__static {
+  background: #f2f2f2;
+  color: var(--gray-text);
+}
+.form-field input:focus {
+  outline: none;
+  border-color: var(--ink);
+}
+.form-field.is-invalid input {
+  border-color: var(--rose);
+}
+.form-field__error {
+  display: none;
+  font-size: 11.5px;
+  color: var(--rose);
+  margin-top: 6px;
+}
+.form-field.is-invalid .form-field__error {
+  display: block;
+}
+
+.booking-summary {
+  font-size: 13px;
+  line-height: 2.1;
+  color: var(--gray-text);
+  margin-bottom: 16px;
+}
+
+/* ---------- Lightbox (room photo "자세히보기") ---------- */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 40px;
+}
+.lightbox-overlay img {
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+.lightbox-overlay__close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  font-size: 32px;
+  line-height: 1;
+  color: var(--white);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- Custom alert modal ---------- */
+.custom-alert-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.custom-alert-box {
+  width: 280px;
+  max-width: 90vw;
+  background: var(--white);
+  border: 2px solid #3b82c4;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+}
+/* .custom-alert-title {
+  color: var(--white);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 14px;
+} */
+.custom-alert-message {
+  padding: 28px 20px 22px;
+  color: #3b82c4;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.custom-alert-btn {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 0 auto 20px;
+  padding: 10px 0;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+}
+.custom-alert-btn:hover {
+  filter: brightness(1.15);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1000px) {
+  .room-card,
+  .event-card {
+    width: max(180px, calc((100% - 2 * 14px) / 2.3));
+  }
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
+  .info-cols {
+    grid-template-columns: 1fr;
+  }
+  .calendar--form {
+    display: none;
+  }
+  .detail-gallery__thumbs {
+    display: none; /* 모바일에서는 썸네일 숨기고 메인 사진을 스와이프로 넘김 */
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 60vh;
+    min-height: 360px;
+  }
+  .room-card {
+    min-width: 130px;
+  }
+  .banner {
+    min-height: 280px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .room-card img,
+  .to-top,
+  .hero__dot,
+  .hero__track {
+    transition: none;
+  }
+}
+
+.nav__item {
+  position: relative;
+  display: inline-block;
+}
+
+.nav__submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+  padding: 8px 0;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s;
+  z-index: 10;
+}
+
+.nav__submenu a {
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
+/* Real pointer (desktop mouse) — hover opens the dropdown. */
+@media (hover: hover) and (pointer: fine) {
+  .nav__item:hover .nav__submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile — two compact rows under the logo:
+   ① top bar: the four menus on a single line
+   ② bottom bar: the selected menu's sub-items on a single line (tap to switch).
+   Submenus are children of each .nav__item, so .nav__item is made static and
+   .nav relative — that way the open submenu spans the full row width and sits
+   centered directly beneath the menu line instead of under one item. */
+@media (max-width: 600px) {
+  .nav {
+    position: relative;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 6px;
+    /* reserve room for the absolute submenu row rendered right below
+       (줄임: 24px → 14px, 상단바와 하단바 사이 간격 축소) */
+    padding-bottom: 14px;
+  }
+  .nav__divider {
+    height: 8px;
+  }
+  .nav > .nav__item > a {
+    font-size: 9px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .nav__item {
+    position: static;
+  }
+  /* bottom bar — only the open menu's submenu shows, one left-aligned line */
+  .nav__submenu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    display: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 12px;
+    /* 줄임: 6px → 2px, 하단바가 위로 당겨지도록 */
+    padding-top: 2px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: transparent;
+    min-width: 0;
+  }
+  .nav__item.is-open .nav__submenu {
+    display: flex;
+  }
+  .nav__submenu a {
+    padding: 0;
+    font-size: 9px;
+    letter-spacing: 0.02em;
+    color: var(--gray-light);
+    white-space: nowrap;
+    transition: color 0.2s ease;
+  }
+  .nav__submenu a:hover {
+    color: var(--ink);
+  }
+}
+
+.calendar__day.is-disabled {
+  opacity: 0.35;
+  cursor: default;
+  pointer-events: none;
+}

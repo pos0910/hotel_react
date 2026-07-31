@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H HOTEL | 호텔예약</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <site-header></site-header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__track">
+        <div
+          class="hero__slide"
+          style="background-image: url(&quot;images/1.webp?v=3&quot;)"
+        ></div>
+        <div
+          class="hero__slide"
+          style="background-image: url(&quot;images/2.png?v=3&quot;)"
+        ></div>
+        <div
+          class="hero__slide"
+          style="background-image: url(&quot;images/3.webp?v=3&quot;)"
+        ></div>
+        ㄴ
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <h1 class="hero__title" id="heroTitle">SWEET MOMENT</h1>
+
+        <span class="hero__btn hero__btn--ghost">SEE MORE</span>
+      </div>
+      <div class="hero__dots">
+        <button
+          class="hero__dot is-active"
+          data-slide="0"
+          aria-label="슬라이드 1"
+        ></button>
+        <button
+          class="hero__dot"
+          data-slide="1"
+          aria-label="슬라이드 2"
+        ></button>
+        <button
+          class="hero__dot"
+          data-slide="2"
+          aria-label="슬라이드 3"
+        ></button>
+      </div>
+    </section>
+
+    <!-- Rooms -->
+    <section class="section section--rooms" id="rooms">
+      <h2 class="section__title">ROOMS</h2>
+    </section>
+    <div class="rooms-slider">
+      <div class="scroll-row" id="roomsScrollRow">
+        <a class="room-card">
+          <img src="images/rooms1.png" alt="디럭스 룸" draggable="false" />
+        </a>
+        <a class="room-card">
+          <img src="images/rooms2.png" alt="스탠다드 룸" draggable="false" />
+        </a>
+        <a class="room-card">
+          <img src="images/rooms3.png" alt="프리미어 룸" draggable="false" />
+        </a>
+        <a class="room-card">
+          <img src="images/rooms4.png" alt="스위트 룸" draggable="false" />
+        </a>
+        <a class="room-card">
+          <img src="images/rooms5.png" alt="펜트하우스" draggable="false" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Event -->
+    <section class="section section--rooms" id="event">
+      <h2 class="section__title">EVENT</h2>
+    </section>
+    <div class="rooms-slider">
+      <div class="scroll-row" id="eventScrollRow">
+        <figure class="event-card">
+          <img src="images/event1.jpg" alt="봄 특가 이벤트" />
+          <figcaption>봄 특가 이벤트</figcaption>
+        </figure>
+        <figure class="event-card">
+          <img src="images/event2.jpg" alt="5월 주요행사" />
+          <figcaption>5월 주요행사</figcaption>
+        </figure>
+        <figure class="event-card">
+          <img src="images/event3.jpg" alt="새로운 객실을 기대해 주세요." />
+          <figcaption>새로운 객실을 기대해 주세요.</figcaption>
+        </figure>
+        <figure class="event-card">
+          <img src="images/event4.jpg" alt="스파 프로그램 할인" />
+          <figcaption>스파 프로그램 할인</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- 2024 Best Hotel Banner -->
+    <section class="banner">
+      <div
+        class="banner__bg"
+        style="background-image: url(&quot;images/banner.jpg&quot;)"
+      ></div>
+      <div class="banner__overlay"></div>
+      <div class="banner__content">
+        <h2 class="banner__title sr-only">2026 BEST HOTEL</h2>
+        <p class="banner__quote sr-only">
+          Can one ever remember love<br />
+          Its like trying to summon up<br />
+          the smell of rose sin a cellar.<br />
+          you might see a rose, but never the perfume.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <to-top-button></to-top-button>
+
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

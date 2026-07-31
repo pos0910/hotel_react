@@ -1,0 +1,10 @@
+{
+  "name": "h-hotel-site",
+  "version": "1.0.0",
+  "description": "H HOTEL static site + reservation API (Node.js, no external dependencies)",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

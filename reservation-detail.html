@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객실 상세 | H HOTEL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <site-header current="reservation"></site-header>
+
+    <!-- Page hero -->
+    <section
+      class="page-hero"
+      style="
+        background-image: url(&quot;images/reservation-hero-hand.jpg&quot;);
+      "
+    >
+      <h1 class="page-hero__title sr-only">RESERVATION</h1>
+      <p class="page-hero__subtitle sr-only">실시간예약</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title" id="roomTitle">STANDARD</h2>
+
+      <div class="detail-layout">
+        <div class="detail-gallery">
+          <div class="detail-gallery__main">
+            <img id="mainPhoto" src="" alt="" />
+          </div>
+          <div class="detail-gallery__thumbs" id="thumbs"></div>
+          <div class="detail-desc">
+            <p id="descKo"></p>
+            <p id="descEn"></p>
+          </div>
+        </div>
+
+        <div class="booking-panel">
+          <div id="calendar" class="calendar calendar--detail"></div>
+
+          <div class="booking-row">
+            <span>추가 인원</span>
+            <select id="extraGuests"></select>
+            <span class="booking-row__hint" id="guestsHint"></span>
+          </div>
+
+          <div class="booking-total">
+            <span>총 합계</span>
+            <strong id="totalPrice">0 원</strong>
+          </div>
+
+          <div class="booking-actions">
+            <button type="button" id="cancelBtn" class="btn">취소</button>
+            <button
+              type="button"
+              id="bookBtn"
+              class="btn btn--primary"
+              disabled
+            >
+              예약하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <site-footer></site-footer>
+
+    <to-top-button></to-top-button>
+
+    <script src="components.js"></script>
+    <script src="reservation.js"></script>
+    <script src="reservation-detail.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
